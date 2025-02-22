@@ -1,6 +1,7 @@
 #!/bin/bash
 
 usr_local=/usr/local
+usr_local_bin=${usr_local}/bin
 usr_local_include=${usr_local}/include
 usr_local_lib=${usr_local}/lib
 usr_local_opt=${usr_local}/opt/llvm
@@ -14,5 +15,5 @@ cmake \
   -D CMAKE_MODULE_LINKER_FLAGS=-L${usr_local_lib} \
   -D CMAKE_SHARED_LINKER_FLAGS=-L${usr_local_lib} \
   -D CMAKE_INSTALL_PREFIX=${usr_local} \
-  -D CMAKE_LINKER=${usr_local_opt_bin}/ld.lld \
+  -D CMAKE_LINKER=${usr_local_bin}/ld.lld \
   ..
