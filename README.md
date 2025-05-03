@@ -1,1 +1,3 @@
-# shell scripts
+# Shell Scripts
+
+Shell scripts for CMake.
