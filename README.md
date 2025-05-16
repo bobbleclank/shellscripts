@@ -15,3 +15,11 @@ cd build
 ./cmake-init.sh
 make
 ```
+
+## Clang-Format
+
+```
+cp ../shellscripts/clang-format.sh .
+chmod 755 clang-format.sh
+mv clang-format.sh format.sh
+```
