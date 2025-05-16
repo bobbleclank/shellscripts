@@ -23,3 +23,11 @@ cp ../shellscripts/clang-format.sh .
 chmod 755 clang-format.sh
 mv clang-format.sh format.sh
 ```
+
+## Clang-Tidy
+
+```
+cp ../shellscripts/clang-tidy.sh .
+chmod 755 clang-tidy.sh
+mv clang-tidy.sh tidy.sh
+```
