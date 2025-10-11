@@ -9,10 +9,8 @@ ln -s build/compile_commands.json .
 cp ../shellscripts/cmake-init.sh .
 chmod 755 cmake-init.sh
 
-mkdir build
-cp cmake-init.sh build
-cd build
 ./cmake-init.sh
+cd build
 make
 ```
 
