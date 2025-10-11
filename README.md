@@ -11,8 +11,7 @@ cp ../shellscripts/cmake-init.sh .
 chmod 755 cmake-init.sh
 
 ./cmake-init.sh
-cd build/debug
-make
+cmake --build build/debug/
 ```
 
 ## Clang-Format
