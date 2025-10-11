@@ -5,13 +5,13 @@ Shell scripts for Clang-Format, Clang-Tidy and CMake.
 ## CMake
 
 ```
-ln -s build/compile_commands.json .
+ln -s build/debug/compile_commands.json .
 
 cp ../shellscripts/cmake-init.sh .
 chmod 755 cmake-init.sh
 
 ./cmake-init.sh
-cd build
+cd build/debug
 make
 ```
 
