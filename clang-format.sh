@@ -1,6 +1,10 @@
 #!/bin/bash
 
-dirs=". include lib src test benchmark example"
+if [[ -n "$1" ]]; then
+  dirs="$1"
+else
+  dirs=". include lib src test benchmark example"
+fi
 
 for dir in $dirs
 do
