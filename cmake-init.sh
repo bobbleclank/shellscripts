@@ -9,10 +9,10 @@ usr_local_opt_bin=${usr_local_opt}/bin
 usr_local_opt_lib=${usr_local_opt}/lib
 
 build_arg=${1:-"debug"}
-if [ "$build_arg" == "debug" ]; then
+if [[ "$build_arg" == "debug" ]]; then
   build_type=Debug
   build_path=build/debug
-elif [ "$build_arg" == "release" ]; then
+elif [[ "$build_arg" == "release" ]]; then
   build_type=Release
   build_path=build/release
 else
