@@ -3,7 +3,7 @@
 if [[ -n "$1" ]]; then
   dirs="$1"
 else
-  dirs=". lib src include test benchmark example"
+  dirs=". lib src include app test benchmark example"
 fi
 
 for dir in $dirs
