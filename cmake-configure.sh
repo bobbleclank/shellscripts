@@ -8,15 +8,7 @@ usr_local_opt=${usr_local}/opt/llvm
 usr_local_opt_bin=${usr_local_opt}/bin
 usr_local_opt_lib=${usr_local_opt}/lib
 
-build_arg=${1:-"debug"}
-if [[ "$build_arg" == "debug" ]]; then
-  preset_name=debug
-elif [[ "$build_arg" == "release" ]]; then
-  preset_name=release
-else
-  echo "Error: Invalid build type"
-  exit 1
-fi
+preset_name=${1:-"debug"}
 
 cmake \
   -D CMAKE_C_COMPILER=${usr_local_opt_bin}/clang \
