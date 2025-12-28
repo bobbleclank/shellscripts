@@ -4,13 +4,13 @@ set -e
 
 ln -s build/debug/compile_commands.json .
 
-cp ../shellscripts/cmake-init.sh .
-chmod 755 cmake-init.sh
+cp ../shellscripts/cmake-configure.sh .
+chmod 755 cmake-configure.sh
 
-./cmake-init.sh debug
+./cmake-configure.sh debug
 cmake --build build/debug/
 
-./cmake-init.sh release
+./cmake-configure.sh release
 cmake --build build/release/
 
 cp ../shellscripts/clang-format.sh .
