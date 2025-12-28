@@ -8,6 +8,8 @@ cp ../shellscripts/cmake-configure.sh .
 chmod 755 cmake-configure.sh
 mv cmake-configure.sh configure.sh
 
+cp ../shellscripts/CMakeUserPresets.json .
+
 ./configure.sh debug
 cmake --build build/debug/
 

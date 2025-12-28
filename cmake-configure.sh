@@ -10,11 +10,9 @@ usr_local_opt_lib=${usr_local_opt}/lib
 
 build_arg=${1:-"debug"}
 if [[ "$build_arg" == "debug" ]]; then
-  build_type=Debug
-  build_path=build/debug
+  preset_name=debug
 elif [[ "$build_arg" == "release" ]]; then
-  build_type=Release
-  build_path=build/release
+  preset_name=release
 else
   echo "Error: Invalid build type"
   exit 1
@@ -29,8 +27,5 @@ cmake \
   -D CMAKE_SHARED_LINKER_FLAGS=-L${usr_local_lib}\ -L${usr_local_opt_lib}/c++\ -L${usr_local_opt_lib}/unwind\ -lunwind\ -fuse-ld=lld \
   -D CMAKE_LINKER=${usr_local_bin}/ld.lld \
   -D CMAKE_INSTALL_PREFIX=${usr_local} \
-  -D CMAKE_CXX_STANDARD=23 \
-  -D CMAKE_EXPORT_COMPILE_COMMANDS=ON \
-  -D CMAKE_BUILD_TYPE=${build_type} \
-  -B ${build_path} \
-  -S .
+  -S . \
+  --preset ${preset_name}
