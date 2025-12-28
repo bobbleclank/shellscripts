@@ -6,11 +6,12 @@ ln -s build/debug/compile_commands.json .
 
 cp ../shellscripts/cmake-configure.sh .
 chmod 755 cmake-configure.sh
+mv cmake-configure.sh configure.sh
 
-./cmake-configure.sh debug
+./configure.sh debug
 cmake --build build/debug/
 
-./cmake-configure.sh release
+./configure.sh release
 cmake --build build/release/
 
 cp ../shellscripts/clang-format.sh .

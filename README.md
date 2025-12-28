@@ -9,8 +9,9 @@ ln -s build/debug/compile_commands.json .
 
 cp ../shellscripts/cmake-configure.sh .
 chmod 755 cmake-configure.sh
+mv cmake-configure.sh configure.sh
 
-./cmake-configure.sh
+./configure.sh
 cmake --build build/debug/
 ```
 
@@ -20,6 +21,8 @@ cmake --build build/debug/
 cp ../shellscripts/clang-format.sh .
 chmod 755 clang-format.sh
 mv clang-format.sh format.sh
+
+./format.sh
 ```
 
 ## Clang-Tidy
@@ -28,4 +31,6 @@ mv clang-format.sh format.sh
 cp ../shellscripts/clang-tidy.sh .
 chmod 755 clang-tidy.sh
 mv clang-tidy.sh tidy.sh
+
+./tidy.sh
 ```
