@@ -27,8 +27,8 @@ cmake \
   -D CMAKE_EXE_LINKER_FLAGS=-L${usr_local_lib}\ -L${usr_local_opt_lib}/c++\ -L${usr_local_opt_lib}/unwind\ -lunwind\ -fuse-ld=lld \
   -D CMAKE_MODULE_LINKER_FLAGS=-L${usr_local_lib}\ -L${usr_local_opt_lib}/c++\ -L${usr_local_opt_lib}/unwind\ -lunwind\ -fuse-ld=lld \
   -D CMAKE_SHARED_LINKER_FLAGS=-L${usr_local_lib}\ -L${usr_local_opt_lib}/c++\ -L${usr_local_opt_lib}/unwind\ -lunwind\ -fuse-ld=lld \
-  -D CMAKE_INSTALL_PREFIX=${usr_local} \
   -D CMAKE_LINKER=${usr_local_bin}/ld.lld \
+  -D CMAKE_INSTALL_PREFIX=${usr_local} \
   -D CMAKE_BUILD_TYPE=${build_type} \
   -B ${build_path} \
   -S .
