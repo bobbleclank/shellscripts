@@ -4,7 +4,8 @@ usr_local=/usr/local
 usr_local_bin=${usr_local}/bin
 usr_local_include=${usr_local}/include
 usr_local_lib=${usr_local}/lib
-usr_local_opt_llvm=${usr_local}/opt/llvm
+usr_local_opt=${usr_local}/opt
+usr_local_opt_llvm=${usr_local_opt}/llvm
 usr_local_opt_llvm_bin=${usr_local_opt_llvm}/bin
 usr_local_opt_llvm_lib=${usr_local_opt_llvm}/lib
 
