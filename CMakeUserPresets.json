@@ -4,6 +4,7 @@
     {
       "name": "default",
       "hidden": true,
+      "generator": "Unix Makefiles",
       "cacheVariables": {
         "CMAKE_CXX_STANDARD": "23",
         "CMAKE_CXX_STANDARD_REQUIRED": "ON",
