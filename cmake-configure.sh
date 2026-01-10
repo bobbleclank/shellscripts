@@ -24,4 +24,5 @@ cmake \
   -D CMAKE_PREFIX_PATH=${usr_local_opt_ncurses} \
   -D CMAKE_INSTALL_PREFIX=${usr_local} \
   -S . \
+  -G Ninja \
   --preset ${preset_name}
