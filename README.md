@@ -1,6 +1,6 @@
 # Shell Scripts
 
-Shell scripts for CMake, Clang-Format and Clang-Tidy.
+Shell scripts for CMake, Clang-Format, Clang-Tidy and GitHub.
 
 ## CMake
 
@@ -35,4 +35,20 @@ chmod 755 clang-tidy.sh
 mv clang-tidy.sh tidy.sh
 
 ./tidy.sh
+```
+
+## GitHub
+
+Run from inside the target repository's clone.
+
+```
+bash ../shellscripts/github-repo-settings.sh
+```
+
+In the repository settings UI, turn off "Allow comments on individual commits".
+
+Optionally, for public repositories, apply the branch ruleset.
+
+```
+gh api --method POST repos/{owner}/{repo}/rulesets --input ../shellscripts/github-repo-ruleset.json
 ```
