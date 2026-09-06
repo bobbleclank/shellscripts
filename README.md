@@ -1,6 +1,6 @@
 # Shell Scripts
 
-Shell scripts for Clang-Format, Clang-Tidy and CMake.
+Shell scripts for CMake, Clang-Format and Clang-Tidy.
 
 ## CMake
 
