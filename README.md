@@ -52,3 +52,22 @@ Optionally, for public repositories, apply the branch ruleset.
 ```
 gh api --method POST repos/{owner}/{repo}/rulesets --input ../shellscripts/github-repo-ruleset.json
 ```
+
+Retrieve the ruleset's id.
+
+```
+gh api repos/{owner}/{repo}/rulesets -q '.[] | "\(.id)  \(.name)  [\(.enforcement)]"'
+```
+
+Replace the ruleset. Any setting the template does not state is reset to its
+default.
+
+```
+gh api --method PUT repos/{owner}/{repo}/rulesets/<id> --input ../shellscripts/github-repo-ruleset.json
+```
+
+Delete the ruleset. There is no output on success.
+
+```
+gh api --method DELETE repos/{owner}/{repo}/rulesets/<id>
+```
