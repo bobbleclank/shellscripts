@@ -1,6 +1,6 @@
 #!/bin/bash
 
-prefix=/usr/local
+prefix=$(brew --prefix)
 include=${prefix}/include
 lib=${prefix}/lib
 opt=${prefix}/opt
