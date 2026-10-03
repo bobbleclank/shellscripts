@@ -14,6 +14,9 @@ cp ../shellscripts/CMakeUserPresets.json .
 
 ./configure.sh
 cmake --build build/debug
+
+./configure.sh release
+cmake --build build/release
 ```
 
 ## Clang-Format
