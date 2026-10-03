@@ -13,7 +13,7 @@ chmod 755 configure.sh
 cp ../shellscripts/CMakeUserPresets.json .
 
 ./configure.sh
-cmake --build build/debug/
+cmake --build build/debug
 ```
 
 ## Clang-Format
