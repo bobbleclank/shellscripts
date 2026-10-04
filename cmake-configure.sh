@@ -12,6 +12,7 @@ opt_lld_bin=${opt_lld}/bin
 opt_ncurses=${opt}/ncurses
 
 linker_flags="-L${lib} -L${opt_llvm_lib}/c++ -L${opt_llvm_lib}/unwind -lunwind -fuse-ld=lld"
+install_prefix=/usr/local
 
 preset_name=${1:-"debug"}
 
@@ -24,7 +25,7 @@ cmake \
   -D CMAKE_SHARED_LINKER_FLAGS="${linker_flags}" \
   -D CMAKE_LINKER=${opt_lld_bin}/ld.lld \
   -D CMAKE_PREFIX_PATH=${opt_ncurses} \
-  -D CMAKE_INSTALL_PREFIX=${prefix} \
+  -D CMAKE_INSTALL_PREFIX=${install_prefix} \
   -S . \
   -G Ninja \
   --preset ${preset_name}
