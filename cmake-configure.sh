@@ -1,9 +1,9 @@
 #!/bin/bash
 
-prefix=$(brew --prefix)
-include=${prefix}/include
-lib=${prefix}/lib
-opt=${prefix}/opt
+brew_prefix=$(brew --prefix)
+include=${brew_prefix}/include
+lib=${brew_prefix}/lib
+opt=${brew_prefix}/opt
 opt_llvm=${opt}/llvm
 opt_llvm_bin=${opt_llvm}/bin
 opt_llvm_lib=${opt_llvm}/lib
