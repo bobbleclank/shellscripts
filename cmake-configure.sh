@@ -23,7 +23,7 @@ cmake \
   -D CMAKE_EXE_LINKER_FLAGS="${linker_flags}" \
   -D CMAKE_MODULE_LINKER_FLAGS="${linker_flags}" \
   -D CMAKE_SHARED_LINKER_FLAGS="${linker_flags}" \
-  -D CMAKE_LINKER=${opt_lld_bin}/ld.lld \
+  -D CMAKE_LINKER=${opt_lld_bin}/ld64.lld \
   -D CMAKE_PREFIX_PATH=${opt_ncurses} \
   -D CMAKE_INSTALL_PREFIX=${install_prefix} \
   -S . \
