@@ -2,6 +2,12 @@
 
 Shell scripts for CMake, Clang-Format, Clang-Tidy and GitHub.
 
+## Prerequisites
+
+```
+brew install cmake ninja llvm lld ncurses clang-format gh
+```
+
 ## CMake
 
 ```
