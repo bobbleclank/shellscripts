@@ -19,7 +19,8 @@
       "installDir": "${sourceDir}/install/debug",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_VERIFY_INTERFACE_HEADER_SETS": "ON"
       }
     },
     {
